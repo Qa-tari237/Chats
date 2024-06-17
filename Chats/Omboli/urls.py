@@ -4,6 +4,8 @@ from django.contrib import admin
 
 from . import views
 
+#admin_site = Chatadmin(name='admin')
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.omboli_frontpage, name='frontpage'),

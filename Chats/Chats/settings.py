@@ -43,7 +43,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'channels',#new
     'Omboli',#new
-    'room'#new
 
 ]
 
@@ -78,9 +77,9 @@ TEMPLATES = [
 WSGI_APPLICATION = 'Chats.wsgi.application'
 ASGI_APPLICATION = 'Chats.asgi.application'#new
 
-CHANNEL_LAYERS ={
-    'default':{
-        'BACKEND': 'channels.layers.InMemoryChannelLayer',
+CHANNEL_LAYERS = {
+    'default': {
+        'BACKEND': 'channels.layers.InMemoryChannelLayer'
     }
 }
 
